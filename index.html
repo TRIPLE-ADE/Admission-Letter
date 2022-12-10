@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Letter</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            margin-top:35px ;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header, main{
+            width: 95%;
+            margin:0 auto;
+        }
+        header > img{
+            width: 100%
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+        }
+        section:first-child > div{
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+        main section:first-child{
+            margin: 20px 0 20px;
+        }
+        section >  div > span{
+            text-align: left;
+            width: 200px;
+            font-weight: 600;
+        }
+        section h1{
+            font-size: 18px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        section ol li ul li{
+            list-style:none ;
+        }
+        section ol li{
+            line-height:1.4;
+            margin: 10px 0;
+            text-align: justify;
+            font-size: 16px;
+        }
+        .salutation{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .registrar p:first-child{
+            font-weight: 700;
+        }
+        .salutation > p{
+            margin: 0 0 10px;
+        }
+        button{
+            padding: 5px 10px;
+            margin-bottom: 30px;
+        }
+        @media print {
+            head *, title *, button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./header.png" alt="School-info">
+    </header>
+    <main>
+        <section>
+            <div>   
+                <span>JAMB REG. NO.: </span>
+                <p id="reg"> 66526461FH</p>
+            </div>
+            <div> 
+                <span>Applicant Name: </span>	 	
+                <p id="fullName"><span id="lastName"> Lawal</span>, <span id="name">Fuhad Gbolahon</span></p>
+            </div>
+            <div> 
+                <span>Gender: </span>			   
+                <p id="gender"> Male</p> 
+            </div>  
+            <div> 
+                <span>Date: </span>
+                <p id="date"> February 9, 2021</p>
+            </div>
+        </section>
+        <section>
+            <h1>OFFER OF PROVISIONAL ADMISSION FOR 2020/2021 SESSION</h1>
+            <ol>
+                <li>Consequent upon your application for transfer, you are hereby offered provisional admission into the University for a three (3) year programme leading to the award of Bachelor of Science (B.Sc.) Accounting subject to the submission of a letter of attestation from your former institution.</li>
+                <li>You are required to possess at least the minimum entry qualification and other admission requirements to enable you register for the programme.</li>
+                <li>In order to register, the following are required:
+                    <ul>
+                        <li>(a) The original letter of provisional admission</li>
+                        <li>(b) JAMB Result Slip-out </li>
+                        <li>(c) JAMB Admission Letter (Institutional Copy)</li>
+                        <li>(d) Original certificate(s) of educational qualification claimed</li>
+                        <li>(e) Original birth certificate or statutory declaration.</li>
+                        <li>(f) Medical certificate of fitness. </li>
+                        <li>(g) Four (4) passport size photographs </li>
+                    </ul>
+                </li>
+                <li>All documents and claim submitted shall be subjected to verification and any false document submitted shall lead to withdrawal of the admission.</li>
+                <li>Please accept my congratulations.</li>
+            </ol>
+
+
+            <div class="salutation">
+                <div class="registrar">
+                    <p>M. A. KADIRI </p>
+                    <p>For Registrar</p>
+                </div>   
+                <img src="./Picture1.png" alt="signature" width="120">
+                <P>Yours faithfully,</p>
+            </div>    
+        </section>
+        
+        <button id="print" onclick="window.print()">Print</button>
+       
+    </main>
+</body>
+</html>
